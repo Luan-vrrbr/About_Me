@@ -6,16 +6,60 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="171dp">
+
     <TextView
         android:id="@+id/name_text"
+        style="@style/nameStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:paddingTop="@dimen/small_padding"
         android:text="@string/name"
         android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textSize="@dimen/text_size"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="152dp"
         tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/nickname_edit"
+        style="@style/nameStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/what_is_your_nickname"
+        android:inputType="textPersonName"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/start_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/yellow_start"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:ignore="MissingConstraints,ImageContrastCheck" />
+
+    <ScrollView
+        android:id="@+id/bio_scoll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/bio_text"
+            style="@style/nameStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingStart="@dimen/padding"
+            android:paddingEnd="@dimen/padding"
+            android:text="@string/bio" />
+
+    </ScrollView>
+
+</LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

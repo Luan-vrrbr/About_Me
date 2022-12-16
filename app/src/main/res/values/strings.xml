@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">About Me</string>
     <string name="name">Luan Ribeiro</string>
+    <string name="yellow_start">yellow start</string>
+
+    <string name="bio"> is a contender for the Blue Lock Project and the protagonist of the spin-off, Blue Lock - Episode Nagi,
+        who currently plays as a rightwing for England\'s Manshine City.\n
+When first arriving at Blue Lock, Nagi was a member of Team V and was the best player in his designated stratum.\n
+        After the Blue Lock Eleven played against the Japan U-20 team, Nagi ranked as one of the top players in the project </string>
+    <string name="what_is_your_nickname">"what is your nickname ? "</string>
 </resources>
